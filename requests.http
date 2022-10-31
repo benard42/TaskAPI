@@ -1,0 +1,74 @@
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+  "email": "johndoe@gmail.com",
+  "password": "123456"
+}
+
+###
+POST http://localhost:5000/api/register
+Content-Type: application/json
+
+{
+  "email": "john@gmail.com",
+  "name": "John rDoe",
+  "password": "123456"
+}
+
+###
+GET http://localhost:5000/api/users/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2Njk2MzY2NiwianRpIjoiNjA1YjAzYzMtYjU1Ni00MjVkLWI5MTMtZmFiMmZjODJkOTkzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY2OTYzNjY2LCJleHAiOjE2NjY5NjQ1NjZ9.twPMidiDIxXEn4LUTHrKJqmKd4v_fPWhatOGJkD0AzY
+
+
+###
+GET http://localhost:5000/api/task
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2Njk2MzY2NiwianRpIjoiNjA1YjAzYzMtYjU1Ni00MjVkLWI5MTMtZmFiMmZjODJkOTkzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY2OTYzNjY2LCJleHAiOjE2NjY5NjQ1NjZ9.twPMidiDIxXEn4LUTHrKJqmKd4v_fPWhatOGJkD0AzY
+
+
+###
+GET http://localhost:5000/api/task/:id
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2Njk2MzY2NiwianRpIjoiNjA1YjAzYzMtYjU1Ni00MjVkLWI5MTMtZmFiMmZjODJkOTkzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY2OTYzNjY2LCJleHAiOjE2NjY5NjQ1NjZ9.twPMidiDIxXEn4LUTHrKJqmKd4v_fPWhatOGJkD0AzY
+
+###
+POST http://localhost:5000/api/task
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2Njk2MzY2NiwianRpIjoiNjA1YjAzYzMtYjU1Ni00MjVkLWI5MTMtZmFiMmZjODJkOTkzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY2OTYzNjY2LCJleHAiOjE2NjY5NjQ1NjZ9.twPMidiDIxXEn4LUTHrKJqmKd4v_fPWhatOGJkD0AzY
+Content-Type: application/json
+
+{
+  "Task_name": "adding users",
+  "Task_Status": "completed",
+  "due_date": "2022-10-31"
+}
+
+###
+
+POST http://localhost:5000/api/task
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2Njk2MzY2NiwianRpIjoiNjA1YjAzYzMtYjU1Ni00MjVkLWI5MTMtZmFiMmZjODJkOTkzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY2OTYzNjY2LCJleHAiOjE2NjY5NjQ1NjZ9.twPMidiDIxXEn4LUTHrKJqmKd4v_fPWhatOGJkD0AzY
+
+
+{
+
+}
+
+
+###
+GET http://localhost:5000/api/task/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2Njk2MzY2NiwianRpIjoiNjA1YjAzYzMtYjU1Ni00MjVkLWI5MTMtZmFiMmZjODJkOTkzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY2OTYzNjY2LCJleHAiOjE2NjY5NjQ1NjZ9.twPMidiDIxXEn4LUTHrKJqmKd4v_fPWhatOGJkD0AzY
+
+{
+  "complete": true
+}
+
+###
+DELETE http://localhost:5000/api/task/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2Njk2MzY2NiwianRpIjoiNjA1YjAzYzMtYjU1Ni00MjVkLWI5MTMtZmFiMmZjODJkOTkzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY2OTYzNjY2LCJleHAiOjE2NjY5NjQ1NjZ9.twPMidiDIxXEn4LUTHrKJqmKd4v_fPWhatOGJkD0AzY
+
+###
+DELETE http://localhost:5000/api/task/:id
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2Njk2MzY2NiwianRpIjoiNjA1YjAzYzMtYjU1Ni00MjVkLWI5MTMtZmFiMmZjODJkOTkzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY2OTYzNjY2LCJleHAiOjE2NjY5NjQ1NjZ9.twPMidiDIxXEn4LUTHrKJqmKd4v_fPWhatOGJkD0AzY
+
+###
+DELETE http://localhost:5000/api/users/:id
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2Njk2MzY2NiwianRpIjoiNjA1YjAzYzMtYjU1Ni00MjVkLWI5MTMtZmFiMmZjODJkOTkzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY2OTYzNjY2LCJleHAiOjE2NjY5NjQ1NjZ9.twPMidiDIxXEn4LUTHrKJqmKd4v_fPWhatOGJkD0AzY
